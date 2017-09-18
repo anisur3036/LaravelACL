@@ -10,12 +10,12 @@ class PostController extends Controller
 {
     public function show()
     {
-    	auth()->loginUsingId(1);
+    	//auth()->loginUsingId(1);
     	//auth()->logout();
-    	$post = Post::first();
-    	if (Gate::denies('show-post', $post)) {
-    		abort(403, "Sorry");
-    	}
-    	return $post->title;
+    	$posts = Post::all();
+    	// if (Gate::denies('show-post', $posts)) {
+    	// 	abort(403, "Sorry");
+    	// }
+    	return view('show', compact('posts'));
     }
 }
