@@ -9,7 +9,7 @@
 			<h2>{{ $post->title }}</h2>
 			<p>{{ $post->body }}</p>
 		{{-- only visible for that user who created this post --}}
-		@can('show-post', $post)
+		@can('update', $post)
 			<span><button>Update Post</button></span>
 		@endcan
 	@endforeach
