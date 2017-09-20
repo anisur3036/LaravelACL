@@ -1,6 +1,5 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-## Section ``Read more..
 	
 ## About Project
 
